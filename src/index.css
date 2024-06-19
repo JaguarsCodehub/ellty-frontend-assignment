@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.form-checkbox {
+  @apply h-8 w-8 rounded border-gray-300 text-purple-600 focus:ring-purple-500;
+  appearance: none;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 2px solid #d1d5db;
+  transition: background-color 0.2s;
+}
+
+.form-checkbox:checked {
+  background-color: #614dff; /* Tailwind's yellow-500 */
+  border-color: #d5d0ff;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 20 20' fill='white' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.62999 13.12L4.18999 9.67995C3.79999 9.28995 3.16999 9.28995 2.77999 9.67995C2.38999 10.07 2.38999 10.7 2.77999 11.09L6.77999 15.09C7.16999 15.48 7.79999 15.48 8.18999 15.09L17.22 6.05995C17.61 5.66995 17.61 5.03995 17.22 4.64995C16.83 4.25995 16.2 4.25995 15.81 4.64995L7.62999 12.83Z'/%3E%3C/svg%3E");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}

@@ -2,12 +2,12 @@ import PropTypes from 'prop-types';
 
 const PageItem = ({ page, isSelected, togglePage }) => (
   <label className='flex items-center py-1 justify-between mb-2 cursor-pointer'>
-    <span className='ml-2'>{page}</span>
+    <span className='ml-2 font-montserrat'>{page}</span>
     <input
       type='checkbox'
       checked={isSelected}
       onChange={() => togglePage(page)}
-      className='form-checkbox h-5 w-5 text-yellow-600'
+      className='form-checkbox'
     />
   </label>
 );
